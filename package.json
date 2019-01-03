@@ -1,0 +1,19 @@
+{
+  "name": "aurora-antd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beetechco/aurora-antd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beetechco/aurora-antd/issues"
+  },
+  "homepage": "https://github.com/beetechco/aurora-antd#readme"
+}
