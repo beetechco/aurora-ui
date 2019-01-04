@@ -3,10 +3,10 @@ import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 
 export default {
-  input: 'src/main.ts',
+  input: 'src/index.ts',
   output: [
-    { file: './dist/aurora.es.js', format: 'es' },
-    { file: './dist/aurora.cjs', format: 'cjs' }
+    { file: './lib/index.es.js', format: 'es' },
+    { file: './lib/index.cjs', format: 'cjs' }
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),

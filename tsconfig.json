@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "./lib",
     "module": "es6",
     "noImplicitAny": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "target": "es5",
-    "baseUrl": "./src",
     "jsx": "react",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "strict": false,
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*",
-    "example/**/*",
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "lib"
   ]
 }

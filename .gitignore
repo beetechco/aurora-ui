@@ -4,6 +4,7 @@ node_modules/
 .rpt2_cache/
 build/
 dist/
+lib/
 example/build/*
 tests/cases/rwc/*
 tests/cases/test262/*

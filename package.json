@@ -2,25 +2,26 @@
   "name": "aurora-antd",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/main.es.js",
-  "module": "./dist/main.es.js",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.es.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest --watch",
-    "build-aurora": "./node_modules/rollup/bin/rollup -c --format es --config ./node_modules/aurora/rollup.config.js",
-    "build": "./node_modules/rollup/bin/rollup -c --format es --config rollup.config.js",
-    "watch": "./node_modules/rollup/bin/rollup -wc --format es --config rollup.config.js"
+    "build-aurora": "./node_modules/rollup/bin/rollup -c --config ./node_modules/aurora/rollup.config.js",
+    "build": "./node_modules/rollup/bin/rollup -c --config rollup.config.js",
+    "watch": "./node_modules/rollup/bin/rollup -wc --config rollup.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beetechco/aurora-antd.git"
   },
   "peerDependencies": {
+    "aurora": "git+https://git@github.com/beetechco/aurora.git#develop"
+  },
+  "devDependencies": {
     "@types/react-dom": "^16.0.11",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "aurora": "file:../aurora"
-  },
-  "devDependencies": {
     "@babel/core": "^7.2.2",
     "@types/enzyme": "^3.1.15",
     "@types/enzyme-adapter-react-16": "^1.0.3",
@@ -47,8 +48,5 @@
   "bugs": {
     "url": "https://github.com/beetechco/aurora-antd/issues"
   },
-  "homepage": "https://github.com/beetechco/aurora-antd#readme",
-  "dependencies": {
-    "aurora": "file:../aurora"
-  }
+  "homepage": "https://github.com/beetechco/aurora-antd#readme"
 }
