@@ -1,0 +1,26 @@
+import * as React from 'react';
+
+interface I{{component}}ComponentState {
+  
+}
+
+interface I{{component}}ComponentProps {
+  id: string;
+}
+
+export class {{component}}Component extends React.Component<
+  I{{component}}ComponentProps,
+  I{{component}}ComponentState
+  > {
+  constructor(props: I{{component}}ComponentProps) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div 
+        id={`${this.props.id}:{{component}}`}
+      />
+    );
+  }
+}
