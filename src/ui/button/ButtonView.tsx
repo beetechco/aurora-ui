@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { IView, View, ButtonModel, IActionListener } from 'aurora';
 
-export class ButtonView extends View implements IView<ButtonModel> {
+export class ButtonView extends View implements IView {
   model: ButtonModel;
   view: any;
   elementRef: React.RefObject<any>;
 
-  constructor(model: ButtonModel, id?: string) {
-    super(id);
-    this.model = model;
+  constructor(id?: string) {
+    super(id);    
   }
 
   onAction = () => {

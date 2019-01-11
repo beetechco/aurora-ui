@@ -16,22 +16,25 @@
     "url": "git+https://github.com/beetechco/aurora-antd.git"
   },
   "peerDependencies": {
-    "aurora": "git+https://git@github.com/beetechco/aurora.git#develop"
+    "aurora": "git+https://git@github.com/beetechco/aurora.git#develop",
+    "@uifabric/merge-styles": "^6.15.0"
   },
   "devDependencies": {
-    "@types/react-dom": "^16.0.11",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
     "@babel/core": "^7.2.2",
     "@types/enzyme": "^3.1.15",
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.10",
+    "@types/jsdom": "^12.2.1",
     "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
     "jest": "^23.6.0",
-    "rollup": "^0.68.2",
+    "jsdom": "^13.1.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.1.0",
     "rollup-plugin-includepaths": "^0.2.3",
     "rollup-plugin-node-resolve": "^4.0.0",
@@ -39,14 +42,15 @@
     "ts-jest": "^23.10.5",
     "tslib": "^1.9.3",
     "tslint": "^5.12.0",
-    "typescript": "^3.2.2",
-    "jsdom": "^13.1.0",
-    "@types/jsdom": "^12.2.1"
+    "typescript": "^3.2.2"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/beetechco/aurora-antd/issues"
   },
-  "homepage": "https://github.com/beetechco/aurora-antd#readme"
+  "homepage": "https://github.com/beetechco/aurora-antd#readme",
+  "dependencies": {
+    "@uifabric/merge-styles": "^6.15.0"
+  }
 }
