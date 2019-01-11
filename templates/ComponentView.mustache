@@ -1,0 +1,31 @@
+import * as React from 'react';
+import { {{component}}Model, View, I{{component}}View } from 'aurora';
+import { ThemeContext } from '../theme/ThemeContext';
+import { {{component}}Component } from './{{component}}Component';
+
+export class {{component}}View extends View implements I{{component}}View {
+  constructor(id?: string) {
+    super(id);
+  }
+
+  renderComponent = () => {
+    return (
+      <ThemeContext.Consumer>
+      {
+        (theme: any) => {
+          return (
+            <{{component}}Component
+              id={this.getId()}
+              ref={this.getElementReference()}
+            />
+          );
+        }
+      }
+      </ThemeContext.Consumer>
+    );
+  }
+
+  repaint = () => {
+
+  }
+}

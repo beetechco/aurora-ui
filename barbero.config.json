@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "name": "components",
+      "variables": [
+        {
+          "name": "folder", 
+          "description": "Component folder"
+        },
+        {
+          "name": "component", 
+          "description": "Component name"
+        }
+      ],
+      "templates": [
+        {
+          "inputFile": "./templates/ComponentView.mustache",
+          "outputDir": "./src/ui/{{folder}}",
+          "outputFile": "{{component}}View.tsx"
+        },
+        {
+          "inputFile": "./templates/ComponentView.test.mustache",
+          "outputDir": "./src/ui/{{folder}}/__tests__",
+          "outputFile": "{{component}}View.test.ts"
+        },
+        {
+          "inputFile": "./templates/Component.mustache",
+          "outputDir": "./src/ui/{{folder}}",
+          "outputFile": "{{component}}Component.tsx"
+        }
+      ]
+    }
+  ]
+}
