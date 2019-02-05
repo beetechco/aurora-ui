@@ -126,7 +126,7 @@ export class TableComponent extends React.Component<
 
   toggleSelection = (key: any, shift: any, row: any) => {
     if (this.props.onSelection) {
-      this.props.onSelection(key);
+      this.props.onSelection(row["id"]);
     }
   };
 }
