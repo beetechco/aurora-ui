@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 interface I{{component}}ComponentState {
-  
+
 }
 
 interface I{{component}}ComponentProps {
   id: string;
+  theme: any;
 }
 
 export class {{component}}Component extends React.Component<
@@ -18,7 +19,7 @@ export class {{component}}Component extends React.Component<
 
   render() {
     return (
-      <div 
+      <div
         id={`${this.props.id}:{{component}}`}
       />
     );

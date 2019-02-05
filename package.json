@@ -53,6 +53,8 @@
   },
   "homepage": "https://github.com/beetechco/aurora-antd#readme",
   "dependencies": {
-    "@uifabric/merge-styles": "^6.15.0"
+    "@types/react-table": "^6.7.21",
+    "@uifabric/merge-styles": "^6.15.0",
+    "react-table": "^6.8.6"
   }
 }
