@@ -184,6 +184,7 @@ export const getClassNames = (state: IInputComponentState, theme: any): IInputCo
       }
     ],
     control: {
+      backgroundColor: 'white',
       border: '0px',
       borderStyle: 'none',
       height: '1.2rem',

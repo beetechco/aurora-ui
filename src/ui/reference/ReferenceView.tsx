@@ -125,6 +125,15 @@ class InputComponent extends React.Component<
             value={this.state.value}
           >
             </input>
+            <ButtonComponent
+              icon='fas fa-search'
+              id={`${this.props.id}:button-control`}
+              key={`${this.props.id}:button-control`}
+              label={'Buscar'}
+              onClick={() => { alert('buscar'); }}
+              onlyIcon={true}
+              theme={this.props.theme}
+            />
           </div>
         }
 
