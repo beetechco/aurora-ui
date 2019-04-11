@@ -9,6 +9,7 @@
     "test": "jest --watch",
     "build-aurora": "./node_modules/rollup/bin/rollup -c --config ./node_modules/aurora/rollup.config.js",
     "build": "./node_modules/rollup/bin/rollup -c --config rollup.config.js",
+    "build-dev": "npm link aurora && npm run build && npm link",
     "watch": "./node_modules/rollup/bin/rollup -wc --config rollup.config.js",
     "make-component": "barbero components"
   },
