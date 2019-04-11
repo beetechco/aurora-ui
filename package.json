@@ -17,7 +17,7 @@
     "url": "git+https://github.com/beetechco/aurora-antd.git"
   },
   "peerDependencies": {
-    "aurora": "git+https://git@github.com/beetechco/aurora.git#develop",
+    "aurora": "latest",
     "@uifabric/merge-styles": "^6.15.0"
   },
   "devDependencies": {
@@ -28,7 +28,6 @@
     "@types/jsdom": "^12.2.1",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
-    "barbero": "github:razueroh/barbero",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
@@ -55,6 +54,7 @@
   "dependencies": {
     "@types/react-table": "^6.7.21",
     "@uifabric/merge-styles": "^6.15.0",
+    "aurora": "file:../aurora",
     "react-table": "^6.8.6"
   }
 }
